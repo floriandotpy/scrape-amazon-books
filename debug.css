@@ -1,0 +1,46 @@
+/* title */
+.s-result-item h2 { border: 2px dashed red; }
+.s-result-item h2::before { content: "title"; font-size: 9px; color: red; }
+
+/* url. hard to highlight */
+.s-result-item h2 > a { border: 2px solid blue; }
+.s-result-item h2 > a::before { content: "url"; font-size: 9px; color: blue; }
+
+/* img */
+.s-result-item img { border: 2px dashed green; }
+.s-result-item img::before { position: relative; top: -10px; content: "img"; font-size: 9px; color: green; }
+
+/* author */
+.s-result-item .a-row.a-size-base.a-color-secondary > .a-size-base:nth-child(2) { border: 2px dashed red; }
+.s-result-item .a-row.a-size-base.a-color-secondary > .a-size-base:nth-child(2)::before { 
+  content: "author"; font-size: 9px; color: red;
+}
+
+/* publication date (unreliable) */
+.s-result-item .a-row.a-size-base.a-color-secondary > .a-size-base:last-child { background: lightblue; }
+.s-result-item .a-row.a-size-base.a-color-secondary > .a-size-base:last-child::after { 
+  content: "publication_date"; font-size: 9px; color: blue;
+}
+
+/* rating */
+.s-result-item [aria-label*="out of"]:nth-child(1) { border: 2px dashed blue; }
+.s-result-item [aria-label*="out of"]:nth-child(1)::before {
+  content: "rating"; font-size: 9px; color: blue;
+}
+
+/* reviews (count only) */
+.s-result-item [aria-label]:nth-child(2) { border: 2px dashed red; }
+.s-result-item [aria-label]:nth-child(2)::before {
+  content: "reviews"; font-size: 9px; color: red;
+}
+
+/* price  */
+/* grabbing multiple, because Amazon often features its Audible/Kindle price ("0.00" as they call it)  */
+.s-result-item .a-price:not(.a-text-price) { border: 2px dotted green; }
+.s-result-item .a-price:not(.a-text-price):before { content: "price_n"; font-size: 9px; color: green; }
+.s-result-item .a-price:not(.a-text-price) .a-price-symbol { border: 2px dashed green; }
+.s-result-item .a-price:not(.a-text-price) .a-price-symbol::before { content: "price_currency"; font-size: 9px; color: green;}
+.s-result-item .a-price:not(.a-text-price) .a-price-whole { border: 2px dashed green; }
+.s-result-item .a-price:not(.a-text-price) .a-price-whole::before { content: "price_whole"; font-size: 9px; color: green;}
+.s-result-item .a-price:not(.a-text-price) .a-price-fraction { border: 2px dashed green; }
+.s-result-item .a-price:not(.a-text-price) .a-price-fraction::before { content: "price_fraction"; font-size: 9px; color: green;}
