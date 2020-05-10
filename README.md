@@ -5,13 +5,11 @@ A bookmarklet to scrape Amazon books right in your browser. Based on [artoo.js](
 
 ## How to use
 
-![Create a bookmark](img/screenshot-bookmark.png?raw=true "Screenshot")
-
-1. **Install the bookmarklet**, by creating a bookmark and pasting the full content of [scrape-bookmarklet.js](scrape-bookmarklet.js) as the URL. As the title, choose "Scrape books".
+1. **Create the bookmarklet**, by creating a bookmark and pasting the full content of [scrape-bookmarklet.js](scrape-bookmarklet.js) into the location field. As the title, choose "Scrape books".
 2. Navigate to a book search page of your choice, for example this [search of Tolkien books](https://www.amazon.com/s?k=tolkien&i=stripbooks-intl-ship&ref=nb_sb_noss_1).
-3. Click the bookmarklet ("Scrape books"), which should start a JSON download.
+3. Click the bookmarklet ("Scrape books"), which will start a JSON download.
 
-![What the scraper will fetch](img/screenshot-debug.png?raw=true "Screenshot")
+![Create a bookmark](img/screenshot-bookmark.png?raw=true "Screenshot")
 
 Example JSON of one book:
 
@@ -29,6 +27,8 @@ Example JSON of one book:
     "price_3": null
 }
 ```
+
+![What the scraper will fetch](img/screenshot-debug.png?raw=true "Screenshot")
 
 ## What this is
 
